@@ -25,7 +25,7 @@ The following arguments are supported:
 * `name` - (Required) Name of the repository.
 * `image_tag_mutability` - (Optional) The tag mutability setting for the repository. Must be one of: `MUTABLE` or `IMMUTABLE`. Defaults to `MUTABLE`.
 * `tags` - (Optional) A mapping of tags to assign to the resource.
-
+* `force_delete` - (Optional) Forces the deletion of images within the repo. The default value is `true`. It can be set to `false` to avoid accidentally deleting the repository if it still contains images.
 ## Attributes Reference
 
 In addition to all arguments above, the following attributes are exported:
